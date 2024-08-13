@@ -1,0 +1,484 @@
+@import url('../css/fonts.css');
+
+
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+
+    /*      Theme colors        */
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*      theme font-family   */
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin: 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic: 'Livvic', cursive;
+}
+
+
+/* ---------------- Global Classes ---------------*/
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span {
+    font-family: var(--Abel);
+}
+
+.container {
+    margin: 0 5vw;
+}
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+p {
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+/* __________________________________________________________________ */
+
+
+a {
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: var(--Lexend);
+}
+
+h2 {
+    font-family: var(--Lexend);
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-family: var(--Abel);
+}
+
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span {
+    font-family: var(--Abel);
+}
+
+.container {
+    margin: 0 5vw;
+
+
+}
+
+/* ------x------- Global Classes -------x-------*/
+/* __________________________ nav-bar styling ________________________ */
+
+
+.nav {
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav-menu {
+    justify-content: space-between;
+}
+
+.nav .nav-brand a {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    font-family: var(--Lexend);
+    display: block;
+}
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    font-family: var(--Abel);
+}
+
+
+.nav .nav-items .nav-link:hover {
+    background: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a {
+    color: var(--white);
+}
+
+.nav .social {
+    padding: 1.4rem 0;
+}
+
+.nav .social i {
+    padding: 0 0.2rem;
+}
+
+.nav .social i:hover {
+    color: #a1c4cf;
+}
+
+/* _____________________ site title________________ */
+
+main .site-title {
+    background: url('../img/Background-image.png');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background {
+    text-align: center;
+    color: var(--white);
+    padding: 10rem;
+}
+
+main .site-title h1,
+h3 {
+    margin: 0.3rem;
+}
+
+main .site-title .btn {
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+main .site-title .btn:hover {
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+/* _____________________________________ Blog Post ___________________________ */
+
+
+main .blog {
+    background: url('../img/Abract01.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+
+main .blog .blog-post {
+    padding-top: 6rem;
+    height: 93%;
+    justify-content: space-between;
+}
+
+main .blog-post .blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 27%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .blog-content img {
+    /* width: 95%; */
+    height: 47%;
+}
+
+main .blog-content .blog-title {
+    padding: 2rem 0.3rem 0rem;
+}
+
+main .blog-content .btn-blog {
+    padding: .7rem 2rem;
+    background: var(--sky);
+    margin: .5rem;
+}
+
+main .blog-content span {
+    display: block;
+}
+
+
+/* ___________________________ site content________________________ */
+
+.site-content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.site-content .blog-posts {
+    padding: 1rem 2rem;
+}
+
+.site-content .blog-posts .post-image {
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.site-content .blog-posts img {
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.site-content .blog-posts img:hover {
+    transform: scale(1.3);
+}
+
+.site-content .blog-posts .post-content>.post-info {
+    background: var(--sky);
+    padding: 1rem 2rem;
+    position: absolute;
+    bottom: 35%;
+    left: 15vw;
+    border-radius: 3rem;
+
+}
+
+.site-content .blog-posts>.post-content .post-info span {
+    margin: 0 .5rem;
+}
+
+.site-content .blog-posts .post-content {
+    padding: 2rem .7rem 0 0;
+}
+
+.site-content .blog-posts .post-content .post-title {
+    padding: 2rem 0;
+}
+
+.site-content .blog-posts .post-content a {
+    font-size: 1.5rem;
+    font-family: var(--Anton);
+}
+
+.site-content .blog-posts .post-content .post-btn {
+    border-radius: 0;
+    padding: .7rem 1.5rem;
+    background: var(--sky);
+}
+
+/* --------------- Sidebar ----------------------- */
+.site-content>.sidebar .category {
+    padding: 2rem 0;
+}
+
+.site-content>.sidebar .category-list {
+    font-family: var(--Livvic);
+}
+
+.site-content>.sidebar .category-list .list-items {
+    background: var(--sky);
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.site-content>.sidebar .category-list .list-items a {
+    color: black;
+}
+
+.site-content .sidebar .popular-post h2 {
+    padding-top: 8rem;
+}
+
+.site-content .sidebar .popular-post .post-content {
+    margin: 3rem 2rem;
+    padding-bottom: 0rem;
+
+}
+
+.site-content .sidebar .popular-post .post-content .post-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.site-content .sidebar .popular-post .post-content .post-info {
+    position: absolute;
+    bottom: 28%;
+}
+
+.site-content .sidebar .popular-post .post-content .post-image div img {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.site-content .sidebar .popular-post .post-content .post-image div img:hover {
+    transform: scale(1.3);
+}
+
+.site-content .sidebar .popular-post .post-info {
+    position: absolute;
+    padding: .4rem .1rem;
+    justify-content: space-between;
+    bottom: -1rem;
+    background: white;
+}
+
+.site-content .sidebar .popular-post .post-info span {
+    margin: 0 .5rem;
+}
+
+.site-content .sidebar .popular-post .post-title a {
+    display: block;
+    margin: 2rem 0rem;
+    font-size: 1rem;
+    font-family: var(--Anton);
+}
+
+.site-content .news-letter {
+    padding-top: 12rem;
+}
+
+.site-content .news-letter .form-element {
+    display: block;
+    margin-left: 2rem;
+}
+
+.site-content .news-letter .form-element input {
+    width: 80%;
+    height: 1.9rem;
+    padding: .3rem .5rem;
+    margin: 1rem 0;
+    font-family: var(--Lexend);
+    font-size: 1rem;
+    border: 1px solid #a1c4fd;
+}
+
+.site-content .news-letter .form-element button {
+    border-radius: 0;
+    background: var(--sky);
+    padding: .8rem 34%;
+}
+
+.site-content .popular-tags {
+    padding-top: 8rem;
+}
+
+.site-content .tags span {
+    border-radius: 3rem;
+    background: var(--sky);
+    padding: .4rem 1rem;
+    margin: .4rem .6rem;
+
+}
+
+/* ---------x------ Sidebar -----------x----------- */
+
+
+/* --------------- Footer----------------------- */
+
+footer.footer {
+    height: 100%;
+    background-color: black;
+    position: relative;
+    margin-top: 5rem;
+}
+
+footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container>div {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer h2 {
+    color: var(--white);
+}
+
+footer.footer .newsletter .form-element {
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input {
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span {
+    background: var(--sky);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+footer.footer .follow-us div i{
+    color: var(--white);
+    padding: 0 .4rem;
+    cursor: pointer;
+}
+
+footer.footer .follow-us div i:hover{
+    color: var(--midnight);
+}
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Josefin);
+}
+
+footer.footer .rights h4 a{
+    color: var(--white);
+}
